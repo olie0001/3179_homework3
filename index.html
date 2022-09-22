@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <!--Vegalite stuff-->
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
+
+    <!--CSS stuff-->
+    <link rel="stylesheet" type="text/css" href="css/styles.css" media="all">
+
+</head>
+
+<body>
+
+    <!--Choropleth Map-->
+    <div id="choropleth_map"></div>
+
+    <!--JavaScript stuff-->
+    <script type="text/javascript">
+
+        // Choropleth Map
+        var map = 'js/choropleth_map.vg.json';
+        vegaEmbed('#choropleth_map', map).then(function (result) {
+        }).catch(console.error);
+
+    </script>
+
+</body>
+
+</html>
